@@ -1,5 +1,4 @@
 # <div align=center> TNSWord   </div>         
-
 ------
 TNSWord is a small application for English learning. It contains some practical functions. Owing to some imperfection in specific page of word-game part, the recommended iOS simulator would temporarily be iphone4s.
 
@@ -8,17 +7,14 @@ TNSWord is a small application for English learning. It contains some practical 
 * [Instruction](https://tanny2015.github.io/TNSWord/en_instructions.html)
 
 Demonstration Video :                
-* [Facebook](https://www.facebook.com/ioooijoijo/videos/1480370412284285/?pnref=story)    
-
-      
-<br>
+* [Facebook](https://www.facebook.com/ioooijoijo/videos/1480370412284285/?pnref=story)         
 
 ### <div align=center> READING </div>
 <br>       
 <div style="text-align:center"><img src="https://tanny2015.github.io/TNSWord/img/reading_home.jpg" width="375" />&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://tanny2015.github.io/TNSWord/img/common_search.jpg" width="375" align="right" /></div> 
 
 
-<br>
+
 <br>
 <br>
 
@@ -27,7 +23,7 @@ Demonstration Video :
 <div style="text-align:center">
 <img src="https://tanny2015.github.io/TNSWord/img/game_home_choice.jpg" width="375" />&nbsp&nbsp&nbsp&nbsp&nbsp  <img src="https://tanny2015.github.io/TNSWord/img/game_detail.jpg" width="375"  align="right" /></div> 
        
-<br>
+
 <br>
 <br>
 
@@ -35,7 +31,7 @@ Demonstration Video :
 <br>           
 <div style="text-align:center"><img src="https://tanny2015.github.io/TNSWord/img/wordbook_home.jpg" width="375" />&nbsp&nbsp&nbsp&nbsp&nbsp<img src="https://tanny2015.github.io/TNSWord/img/wordbook_detail.jpg" width="375" align="right"  /></div> 
 
-<br>
+
 <br>
 <br>
 
