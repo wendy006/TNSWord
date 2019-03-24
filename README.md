@@ -1,2 +1,3 @@
-# TNSWord_INSTRUCTIONS
+# TNSWord INSTRUCTIONS
+
 instruction for application
