@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TNSSettingVC">
+            <connections>
+                <outlet property="fontLabelHorizontalSpaceToLeft" destination="KD5-a4-SSX" id="wQC-Mc-NFy"/>
+                <outlet property="fontLabelVerticalSpaceToTop" destination="UTf-fY-7yf" id="wld-4M-dEA"/>
+                <outlet property="openAudioEffectSwitch" destination="gK2-xf-bpa" id="gYW-cJ-PdY"/>
+                <outlet property="textSizeField" destination="yJm-Ir-lgB" id="46R-m7-ytc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字体大小 :" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLZ-JU-FiS" userLabel="字体大小">
+                    <rect key="frame" x="67" y="89" width="78" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="DES-wm-SCO"/>
+                        <constraint firstAttribute="height" constant="20" id="NCE-kV-38T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音效开关 :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vby-Qo-w2Z" userLabel="音效开关">
+                    <rect key="frame" x="61" y="161" width="90" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="CQ9-TJ-9f1"/>
+                        <constraint firstAttribute="height" constant="21" id="NYd-yr-9Ri"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="字号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yJm-Ir-lgB">
+                    <rect key="frame" x="175" y="89" width="66" height="30"/>
+                    <color key="backgroundColor" red="0.89411764705882357" green="0.91764705882352937" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="EIT-Gv-JPC"/>
+                        <constraint firstAttribute="width" constant="66" id="WIM-jU-LZ7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <action selector="textSizeDidChanged:" destination="-1" eventType="editingDidEnd" id="oZY-WQ-153"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入8~15之间的整数" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-lI-3gk">
+                    <rect key="frame" x="31" y="117" width="150" height="13"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="ERU-mX-fhF"/>
+                        <constraint firstAttribute="width" constant="150" id="HIS-x4-2rW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MicrosoftYaHei" family="Microsoft YaHei" pointSize="11"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gK2-xf-bpa">
+                    <rect key="frame" x="184" y="156" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="Aa2-E7-hMC"/>
+                        <constraint firstAttribute="width" constant="49" id="hb1-DX-oGk"/>
+                    </constraints>
+                    <connections>
+                        <action selector="audioEffectValueDidChanged:" destination="-1" eventType="valueChanged" id="O5r-ev-fqy"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oLj-Lg-1Xp">
+                    <rect key="frame" x="135" y="355" width="50" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="fjy-Eo-ht3"/>
+                        <constraint firstAttribute="width" constant="50" id="vxM-DL-MrF"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="readingTitleViewImage.jpg">
+                        <attributedString key="attributedTitle">
+                            <fragment content="确定">
+                                <attributes>
+                                    <font key="NSFont" size="18" name="STHeitiSC-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                    <connections>
+                        <action selector="didChangeValueAndShutPage:" destination="-1" eventType="touchUpInside" id="gxo-Bf-rkt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gK2-xf-bpa" firstAttribute="leading" secondItem="Vby-Qo-w2Z" secondAttribute="trailing" constant="33" id="2oq-KS-bFu"/>
+                <constraint firstAttribute="bottom" secondItem="oLj-Lg-1Xp" secondAttribute="bottom" constant="86" id="6xY-oJ-OEO"/>
+                <constraint firstItem="gK2-xf-bpa" firstAttribute="centerX" secondItem="yJm-Ir-lgB" secondAttribute="centerX" id="BDk-L8-Dfw"/>
+                <constraint firstItem="Vby-Qo-w2Z" firstAttribute="leading" secondItem="hLZ-JU-FiS" secondAttribute="leading" constant="-6" id="EuH-Kc-A4b"/>
+                <constraint firstItem="hLZ-JU-FiS" firstAttribute="top" secondItem="yJm-Ir-lgB" secondAttribute="top" id="JFC-7O-kQM"/>
+                <constraint firstItem="hLZ-JU-FiS" firstAttribute="centerX" secondItem="JXu-lI-3gk" secondAttribute="centerX" id="JL7-L9-izr"/>
+                <constraint firstItem="hLZ-JU-FiS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="67" id="KD5-a4-SSX"/>
+                <constraint firstItem="Vby-Qo-w2Z" firstAttribute="centerY" secondItem="gK2-xf-bpa" secondAttribute="centerY" id="U6u-S5-tfS"/>
+                <constraint firstItem="hLZ-JU-FiS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="89" id="UTf-fY-7yf"/>
+                <constraint firstItem="Vby-Qo-w2Z" firstAttribute="top" secondItem="JXu-lI-3gk" secondAttribute="bottom" constant="31" id="fTS-Yi-23Q"/>
+                <constraint firstItem="Vby-Qo-w2Z" firstAttribute="centerY" secondItem="gK2-xf-bpa" secondAttribute="centerY" id="pgf-xp-pb5"/>
+                <constraint firstAttribute="centerX" secondItem="oLj-Lg-1Xp" secondAttribute="centerX" id="r3z-SS-8Ct"/>
+                <constraint firstItem="JXu-lI-3gk" firstAttribute="top" secondItem="hLZ-JU-FiS" secondAttribute="bottom" constant="8" id="sni-lf-Ej9"/>
+                <constraint firstItem="Vby-Qo-w2Z" firstAttribute="leading" secondItem="hLZ-JU-FiS" secondAttribute="leading" constant="-6" id="yD5-VG-mQ9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="259" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="readingTitleViewImage.jpg" width="50" height="44"/>
+    </resources>
+</document>

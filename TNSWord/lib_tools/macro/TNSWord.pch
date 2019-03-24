@@ -1,0 +1,81 @@
+//
+//  TNSWord.pch
+//  TNSWord
+//
+//  Created by mac on 15/7/23.
+//  Copyright (c) 2015年 tanorigin. All rights reserved.
+//
+
+#ifndef TNSWord_TNSWord_pch
+#define TNSWord_TNSWord_pch
+#endif
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import "UIView+Extension.h"
+#import "UIImage+TNSTool.h"
+#import "NSString+TNSTool.h"
+#import "TNSMusicTool.h"
+
+#import "TNDataContainer.h"
+#import "MBProgressHUD+MJ.h"
+#import "Masonry.h"
+#import "Header.h"
+
+#define TNColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+///////////////////  /////////  //////////////////
+
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define screenH         ( [UIScreen mainScreen].bounds.size.height )
+#define screenW         ( [UIScreen mainScreen].bounds.size.width )
+#define navigationBarH    64
+#define SCREEN_MAX_LENGTH (MAX(screenW, screenH))
+#define SCREEN_MIN_LENGTH (MIN(screenW, screenH))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+/////////////////////////////////////////////////
+
+
+
+
+//#define menuWidth 250
+#define menuWidth  (250.0/320.0 * screenW)
+#define touchViewTextSize 10
+#define grid_per_Row   5
+#define padding 10
+#define menuBtnWidth   (padding*5)
+
+#define tagBase  10000
+#define tagBase2  1000
+#define tagBase3  100
+#define touchViewTagBase 200
+
+static double chapterIndex;
+#define sentencesPath      [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"sentences.plist"]
+
+#define wordBookPath      [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"wordBook.plist"]
+
+#define readingChapterATPath      [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"readingChapterAT.plist"]
+
+#define gameChapterATPath      [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"gameChapterAT.plist"]
+
+#define TNAccountPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"account.archive"]
+
+
+#endif
+
+// Log
+#ifdef DEBUG
+#define TNLog(...) NSLog(@"%s %d \n %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#else
+#define TNLog(...)
+#endif
