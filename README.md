@@ -4,7 +4,7 @@ TNSWord is a small application for English learning. It contains some practical 
 
 
 <b>Detail Page</b>: 
-* [Instruction](https://tanny2015.github.io/TNSWord/en_instructions.html)
+* [Instruction](https://tanny2015.github.io/TNSWord/en.html)
 
 Demonstration Video :                
 * [Facebook](https://www.facebook.com/ioooijoijo/videos/1480370412284285/?pnref=story)         
