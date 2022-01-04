@@ -4,10 +4,10 @@ TNSWord is a small application for English learning. It contains some practical 
 
 
 <b>Detail Page</b>: 
-* [Instruction](https://wendy006.github.io/TNSWord/en.html)
+* [Instruction(v2.0)](https://wendy006.github.io/TNSWord/en.html)
 
 Demonstration Video :                
-* [youtube](https://youtu.be/jOHN40XC3Os)         
+* [youtube(v1.0)](https://youtu.be/jOHN40XC3Os)         
 
 ### <div align=center> READING </div>
 <br>       
